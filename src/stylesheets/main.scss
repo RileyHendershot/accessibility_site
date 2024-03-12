@@ -1,0 +1,14 @@
+@import "bootstrap/scss/bootstrap";
+
+main {
+  margin: 3rem;
+}
+
+header button a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+header button.btn:hover {
+  color: black;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Riley Hendershot Accessibility Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Riley Hendershot</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="plain_language.html">Plain Language</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="site_design.html">Site Design</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header></header>
+
+    <main>
+      <h1>Welcome to my Accessibility site</h1>
+      <section aria-labelledby="sec01header">
+        <h2 id="sec01header">Disabilities in the United States</h2>
+        <p>
+          The 2021 American Community Survey by the Census Bureau reported 13% of all Americans have a
+          non-institutionalized disability. Of the roughly 38,903,887 adults with a disability in the United States,
+          19.7% of them live below the poverty line. This is almost double the number of adults in the United States who
+          are below the poverty line. This is partially due to lower rates of employment for disabled people. In the
+          United States, 25.9% of disabled people over the age of 16 are employed in the civilian sector, while 59.6% of
+          all US citizens over 16 are employed in the same sector.
+        </p>
+
+        <p>
+          Comparing the breakdown of disability between my current state of residence, Utah, and the United States, Utah
+          has a disabled population of 342,378 or 10.3% of the total population, compared to the United States which has
+          42,485,034 disabled people or 13.0% of the total population. Table 1: Disability Type by Gender for Utah and
+          the United States shows the disparities between genders and types of disabilities.
+        </p>
+
+        <p>There are a few reasons why these disparities exist; however, that is not a topic for this page.</p>
+
+        <p>
+          When it comes to representation by race, there are some interesting differences between Utah and the United
+          States. Table 2: Disability Percent by Race, you can see that Utah has a higher occurrence of disabilities in
+          the Black or African American, American Indian and Alaska Natives, Native Hawai’ian and Other Pacific
+          Islanders, and the Hispanic or Latino communities than the United States as a whole. However, for the White
+          community in Utah, they have a lower occurrence of disability than the national rate.
+        </p>
+        <p>
+          When we take into consideration the rates of disabilities in the United States (roughly 40 million people) and
+          Utah (roughly 350,000 people), we can understand the importance of building accessible experiences for all
+          people.
+        </p>
+
+        <h2>Universal Design is Design for All</h2>
+
+        <p>Even the creator of the web, Tim Berners-Lee understood the importance of inclusion in web design:</p>
+        <p>The power of the web is in its universality. Access by everyone regardless is an essential aspect.</p>
+
+        <p>This website applies the principles of Universal Design, as defined by Ronald Mace and his team:</p>
+        <dl>
+          <dt>Equitable Use</dt>
+          <dd>The design is useful and marketable to people with diverse abilities</dd>
+          <dt>Flexibility in Use</dt>
+          <dd>The design accommodates a wide range of individual preferences and abilities</dd>
+          <dt>Simple and Intuitive Use</dt>
+          <dd>
+            Use of the design is easy to understand, regardless of the user’s experience, knowledge, language skills, or
+            current concentration level
+          </dd>
+          <dt>Perceptible Information</dt>
+          <dd>
+            The design communicates necessary information effectively to the user, regardless of ambient conditions or
+            the user’s sensory abilities
+          </dd>
+          <dt>Tolerance for Error</dt>
+          <dd>The design minimizes hazards and the adverse consequences of accidental or unintended actions</dd>
+          <dt>Low Physical Effort</dt>
+          <dd>The design can be used efficiently and comfortably and with a minimum of fatigue</dd>
+          <dt>Size and Space for Approach and Use</dt>
+          <dd>
+            Appropriate size and space is provided for approach, reach, manipulation, and use regardless of user’s body
+            size, posture, or mobility
+          </dd>
+        </dl>
+        <p>It has also been built to meet the Level AA requirements of WCAG 2.1.</p>
+      </section>
+    </main>
+
+    <aside></aside>
+
+    <footer></footer>
+
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>
