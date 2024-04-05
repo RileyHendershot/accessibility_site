@@ -43,6 +43,105 @@
       </div>
     </nav>
 
+    <header id="contactHeader">
+      <h1>Contact Me</h1>
+    </header>
+
+    <main id="mainContent" class="container mt-4">
+      <form>
+        <fieldset class="mb-3 rounded-3 bg- p-3">
+          <legend>Personal Information</legend>
+          <div class="row">
+            <div class="mb-3 col-md">
+              <label class="form-label" for="fullName">Full Name</label><br />
+              <input class="form-control" type="text" name="fullname" id="fullName" required aria-required="true" />
+            </div>
+            <div class="mb3 col-md">
+              <label class="form-label" for="email">Email</label><br />
+              <input
+                class="form-control"
+                type="email"
+                name="email address"
+                id="email"
+                required
+                aria-required="true"
+                aria-describedby="emailHelp"
+                oninput="validateEmail(this.value)"
+              />
+              <span id="live-region" class="live-region fw-bold text-decoration-underline" aria-live="assertive"></span>
+              <div id="emailHelp">Your email will not be shared.</div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="mb-3 rounded-3 bg- p-3">
+          <legend>Message</legend>
+          <label class="form-label" for="msgReason">Reason for Contacting:</label>
+          <select class="form-select" name="reason" id="msgReason" required aria-required="true">
+            <option value="">Please select</option>
+            <option value="sayHello">Just saying "hi"</option>
+            <option value="collab">I want to collaborate</option>
+            <option value="feedback">I have feedback</option>
+            <option value="bug">I found a bug/issue</option>
+          </select>
+          <label class="form-label" for="msgSubject">Subject</label>
+          <input class="form-control form-control-lg" type="text" name="subject" id="msgSubject" />
+          <label class="form-label" for="msgContent">Subject</label>
+          <textarea
+            class="form-control"
+            name="message"
+            id="msgContent"
+            cols="30"
+            rows="10"
+            required
+            aria-required="true"
+          ></textarea>
+        </fieldset>
+        <fieldset class="mb-3 rounded-3 bg- p-3">
+          <legend>How did you hear about me?</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="tookClass" name="tookClass" />
+            <label class="form-check-label" for="tookClass">I took your class</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="friendClass" name="tookClass" />
+            <label class="form-check-label" for="friendClass">A friend took your class</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="realLife" name="tookClass" />
+            <label class="form-check-label" for="realLife">I know you in real life</label>
+          </div>
+        </fieldset>
+        <fieldset class="mb-3 rounded-3 bg- p-3">
+          <legend>Would you like to recieve our newsletter?</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="starbucks" id="naturally" />
+            <label class="form-check-label" for="naturally">Yes</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="starbucks" id="nope" />
+            <label class="form-check-label" for="nope">No</label>
+          </div>
+        </fieldset>
+
+        <div id="submit">
+          <button type="submit" class="btn btn-primary fs-3 mt-4 shadow-sm">Submit</button>
+        </div>
+      </form>
+    </main>
+
     <script type="module" src="./javascripts/main.js"></script>
+    <script>
+      function validateEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        const liveRegion = document.getElementById("live-region")
+        if (email === "") {
+          liveRegion.textContent = "Email is required."
+        } else if (!emailRegex.test(email)) {
+          liveRegion.textContent = "Please enter a valid email address."
+        } else {
+          liveRegion.textContent = ""
+        }
+      }
+    </script>
   </body>
 </html>
