@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Site Design</title>
     <link rel="stylesheet" href="./stylesheets/main.scss" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Main Navigation">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Riley Hendershot</a>
         <button
@@ -30,7 +30,7 @@
               <a class="nav-link" href="plain_language.html">Plain Language</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="site_design.html">Site Design</a>
+              <li><a class="nav-link" href="site_design.html">Site Design</a></li>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link" href="about.html">About Me</a>
@@ -42,6 +42,83 @@
         </div>
       </div>
     </nav>
+
+    <main>
+      <h1>Site Design</h1>
+
+      <section>
+        <h2 id="introductionHeader">Introduction</h2>
+        <p>
+          Good visual design and structure are crucial for creating an accessible and user-friendly website. The visual
+          design enhances user experience, while a well-structured layout ensures easy navigation and comprehension of
+          content.
+        </p>
+      </section>
+
+      <section>
+        <h2>Visual Design</h2>
+        <section>
+          <h3 id="colorHeader">Color</h3>
+          <p>
+            Color plays a significant role in conveying meaning and creating visual hierarchy on a website. Our color
+            selections were made with careful consideration:
+          </p>
+          <!-- Color content here -->
+        </section>
+
+        <section>
+          <h3 id="typographyHeader">Typography</h3>
+          <p>
+            Typography greatly influences readability and user engagement. Our font selections were based on legibility
+            and visual appeal:
+          </p>
+          <!-- Typography content here -->
+        </section>
+
+        <section>
+          <h3 id="layoutHeader">Layout/Navigation</h3>
+          <p>
+            Our visual layout is designed to enhance user experience and maintain a logical reading order. Navigation
+            elements are designed to be visually distinguishable and accessible:
+          </p>
+          <!-- Layout/Navigation content here -->
+        </section>
+      </section>
+
+      <section>
+        <h2 id="contentHeader">Content</h2>
+        <p>
+          The content is structured to ensure readability and adaptability to various screen sizes. Considerations for
+          text zoom and Bootstrap usage are addressed:
+        </p>
+        <!-- Content section content here -->
+      </section>
+
+      <section>
+        <h2 id="structuralDesignHeader">Structural Design</h2>
+        <p>Various coding practices were implemented to ensure good accessibility and usability:</p>
+        <ul>
+          <li>ARIA attributes</li>
+          <li>Semantic elements</li>
+          <li>Descriptive link text</li>
+          <li>Focus styles</li>
+          <li>Skip navigation link</li>
+          <li>Responsive design</li>
+          <li>Alt-Text</li>
+          <li>Testing with accessibility tools</li>
+        </ul>
+        <!-- Structural Design content here -->
+      </section>
+
+      <section>
+        <h2>References</h2>
+        <ul>
+          <li>Reference 1</li>
+          <li>Reference 2</li>
+          <!-- Add more references as needed -->
+        </ul>
+      </section>
+    </main>
 
     <script type="module" src="./javascripts/main.js"></script>
   </body>
